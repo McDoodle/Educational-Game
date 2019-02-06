@@ -10,12 +10,15 @@ public class QuestionStorage : MonoBehaviour
     public GameObject secondAnwserBox;
     public GameObject thirdAnwserBox;
 
+    public int[] correctAnwsers;
+
     public string[] questions;
     public string[] firstAnwsers;
     public string[] secondAnwsers;
     public string[] thirdAnwsers;
 
-    public int currentQuestion = 1;
+    public int startingQuestion = 1;
+    public int currentQuestion;
 
     // Start is called before the first frame update
     void Start()
@@ -31,11 +34,45 @@ public class QuestionStorage : MonoBehaviour
 
     void InstaniatingQuestions()
     {
-        questionBox.GetComponentInChildren<Text>().text = questions[1];
-        firstAnwserBox.GetComponentInChildren<Text>().text = firstAnwsers[1];
-        secondAnwserBox.GetComponentInChildren<Text>().text = secondAnwsers[1];
-        thirdAnwserBox.GetComponentInChildren<Text>().text = thirdAnwsers[1];
+        questionBox.GetComponentInChildren<Text>().text = questions[startingQuestion];
+        firstAnwserBox.GetComponentInChildren<Text>().text = firstAnwsers[startingQuestion];
+        secondAnwserBox.GetComponentInChildren<Text>().text = secondAnwsers[startingQuestion];
+        thirdAnwserBox.GetComponentInChildren<Text>().text = thirdAnwsers[startingQuestion];
+
+        currentQuestion = startingQuestion;
     }
 
+    public void Button1()
+    {
+        if (correctAnwsers[currentQuestion] == 1)
+        {
 
+        }
+    }
+
+    public void Button2()
+    {
+        if (correctAnwsers[currentQuestion] == 2)
+        {
+
+        }
+    }
+
+    public void Button3()
+    {
+        if (correctAnwsers[currentQuestion] == 3)
+        {
+
+        }
+    }
+
+    void Correct()
+    {
+
+    }
+
+    void Wrong()
+    {
+
+    }
 }
