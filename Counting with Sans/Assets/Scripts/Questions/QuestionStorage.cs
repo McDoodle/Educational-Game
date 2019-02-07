@@ -32,6 +32,7 @@ public class QuestionStorage : MonoBehaviour
         
     }
 
+    //Sets the button text to the starting question
     void InstaniatingQuestions()
     {
         questionBox.GetComponentInChildren<Text>().text = questions[startingQuestion];
@@ -42,11 +43,16 @@ public class QuestionStorage : MonoBehaviour
         currentQuestion = startingQuestion;
     }
 
+    // Button1, Button2 & Button3 all check if the answer is the same as their number.
     public void Button1()
     {
         if (correctAnwsers[currentQuestion] == 1)
         {
-
+            Correct();
+        }
+        else
+        {
+            Wrong();
         }
     }
 
@@ -54,7 +60,11 @@ public class QuestionStorage : MonoBehaviour
     {
         if (correctAnwsers[currentQuestion] == 2)
         {
-
+            Correct();
+        }
+        else
+        {
+            Wrong();
         }
     }
 
@@ -62,12 +72,21 @@ public class QuestionStorage : MonoBehaviour
     {
         if (correctAnwsers[currentQuestion] == 3)
         {
-
+            Correct();
+        }
+        else
+        {
+            Wrong();
         }
     }
 
     void Correct()
     {
+
+        ChangeButtonText();
+
+
+
 
     }
 
@@ -75,4 +94,17 @@ public class QuestionStorage : MonoBehaviour
     {
 
     }
+
+    //Increments the currentQuestion by one and updates the buttons text.
+    void ChangeButtonText()
+    {
+        currentQuestion += 1;
+
+        questionBox.GetComponentInChildren<Text>().text = questions[currentQuestion];
+        firstAnwserBox.GetComponentInChildren<Text>().text = firstAnwsers[currentQuestion];
+        secondAnwserBox.GetComponentInChildren<Text>().text = secondAnwsers[currentQuestion];
+        thirdAnwserBox.GetComponentInChildren<Text>().text = thirdAnwsers[currentQuestion];
+    }
+
+
 }
