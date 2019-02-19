@@ -494,31 +494,31 @@ MonoBehaviour:
   firstAnwserBox: {fileID: 214667115}
   secondAnwserBox: {fileID: 1937817565}
   thirdAnwserBox: {fileID: 705823044}
-  correctAnwsers: ffffff7f02000000030000000100000002000000
+  correctAnwsers: ffffff7f02000000030000000100000001000000
   questions:
   - Don't write here!
   - What is 1 + 2?
   - What is 4 + 2?
-  - Debug 3
-  - Debug 4
+  - What is 6 + 3?
+  - What is 3 + 2?
   firstAnwsers:
   - Don't write here!
   - 7
   - 3
-  - Debug 3
-  - Debug 4
+  - 9
+  - 5
   secondAnwsers:
   - Don't write here!
   - 3
   - 7
-  - Debug 3
-  - Debug 4
+  - 3
+  - 6
   thirdAnwsers:
   - Don't write here!
   - 9001
   - 6
-  - Debug 3
-  - Debug 4
+  - 7
+  - 3
   startingQuestion: 1
   currentQuestion: 1
 --- !u!4 &667585358
