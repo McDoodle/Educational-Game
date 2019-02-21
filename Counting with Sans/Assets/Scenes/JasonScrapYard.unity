@@ -593,6 +593,7 @@ MonoBehaviour:
   firstAnwserBox: {fileID: 214667115}
   secondAnwserBox: {fileID: 1937817565}
   thirdAnwserBox: {fileID: 705823044}
+  player: {fileID: 836024546}
   correctAnwsers: ffffff7f02000000030000000100000001000000
   questions:
   - Don't write here!

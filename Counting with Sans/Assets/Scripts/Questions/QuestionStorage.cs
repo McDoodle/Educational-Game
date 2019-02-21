@@ -11,6 +11,9 @@ public class QuestionStorage : MonoBehaviour
     public GameObject secondAnwserBox;
     public GameObject thirdAnwserBox;
 
+    //Stores the player to send animation information to
+    public GameObject player;
+
     //Integer Array for the Anwsers
     public int[] correctAnwsers;
 
@@ -103,18 +106,23 @@ public class QuestionStorage : MonoBehaviour
     //Increments the currentQuestion by one and updates the buttons text.
     void ChangeButtonText()
     {
+        //Checks if there are more questions
         if (questions.Length > currentQuestion)
         {
+
             currentQuestion += 1;
             questionBox.GetComponentInChildren<Text>().text = questions[currentQuestion];
             firstAnwserBox.GetComponentInChildren<Text>().text = firstAnwsers[currentQuestion];
             secondAnwserBox.GetComponentInChildren<Text>().text = secondAnwsers[currentQuestion];
             thirdAnwserBox.GetComponentInChildren<Text>().text = thirdAnwsers[currentQuestion];
+
         }
     }
 
     void PlayAnimation(int button, bool wrong)
     {
+
+        
 
     }
 
