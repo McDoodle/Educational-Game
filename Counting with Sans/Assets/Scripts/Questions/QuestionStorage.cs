@@ -5,18 +5,22 @@ using UnityEngine.UI;
 
 public class QuestionStorage : MonoBehaviour
 {
+    //Stores the four buttons for the script to reference
     public GameObject questionBox;
     public GameObject firstAnwserBox;
     public GameObject secondAnwserBox;
     public GameObject thirdAnwserBox;
 
+    //Integer Array for the Anwsers
     public int[] correctAnwsers;
 
+    //String Arrays for storing Questions and Choices
     public string[] questions;
     public string[] firstAnwsers;
     public string[] secondAnwsers;
     public string[] thirdAnwsers;
 
+    //Sets the starting question and keeps track of the current question
     public int startingQuestion = 1;
     public int currentQuestion;
 
@@ -24,6 +28,7 @@ public class QuestionStorage : MonoBehaviour
     void Start()
     {
         InstaniatingQuestions();
+        Debug.Log(questions.Length);
     }
 
     // Update is called once per frame
@@ -48,11 +53,11 @@ public class QuestionStorage : MonoBehaviour
     {
         if (correctAnwsers[currentQuestion] == 1)
         {
-            Correct();
+            Correct(1);
         }
         else
         {
-            Wrong();
+            Wrong(1);
         }
     }
 
@@ -60,11 +65,11 @@ public class QuestionStorage : MonoBehaviour
     {
         if (correctAnwsers[currentQuestion] == 2)
         {
-            Correct();
+            Correct(2);
         }
         else
         {
-            Wrong();
+            Wrong(2);
         }
     }
 
@@ -72,39 +77,45 @@ public class QuestionStorage : MonoBehaviour
     {
         if (correctAnwsers[currentQuestion] == 3)
         {
-            Correct();
+            Correct(3);
         }
         else
         {
-            Wrong();
+            Wrong(3);
         }
     }
 
-    void Correct()
+    void Correct(int button)
     {
 
         ChangeButtonText();
 
-
+        PlayAnimation(button, false);
 
 
     }
 
-    void Wrong()
+    void Wrong(int button)
     {
-
+        PlayAnimation(button, true);
     }
 
     //Increments the currentQuestion by one and updates the buttons text.
     void ChangeButtonText()
     {
-        currentQuestion += 1;
-
-        questionBox.GetComponentInChildren<Text>().text = questions[currentQuestion];
-        firstAnwserBox.GetComponentInChildren<Text>().text = firstAnwsers[currentQuestion];
-        secondAnwserBox.GetComponentInChildren<Text>().text = secondAnwsers[currentQuestion];
-        thirdAnwserBox.GetComponentInChildren<Text>().text = thirdAnwsers[currentQuestion];
+        if (questions.Length > currentQuestion)
+        {
+            currentQuestion += 1;
+            questionBox.GetComponentInChildren<Text>().text = questions[currentQuestion];
+            firstAnwserBox.GetComponentInChildren<Text>().text = firstAnwsers[currentQuestion];
+            secondAnwserBox.GetComponentInChildren<Text>().text = secondAnwsers[currentQuestion];
+            thirdAnwserBox.GetComponentInChildren<Text>().text = thirdAnwsers[currentQuestion];
+        }
     }
 
+    void PlayAnimation(int button, bool wrong)
+    {
+
+    }
 
 }
