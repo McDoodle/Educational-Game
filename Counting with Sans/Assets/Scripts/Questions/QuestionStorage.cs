@@ -31,7 +31,7 @@ public class QuestionStorage : MonoBehaviour
     void Start()
     {
         InstaniatingQuestions();
-        Debug.Log(questions.Length);
+       
     }
 
     // Update is called once per frame
