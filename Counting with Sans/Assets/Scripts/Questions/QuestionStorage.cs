@@ -91,20 +91,19 @@ public class QuestionStorage : MonoBehaviour
     void Correct(int button)
     {
 
-        ChangeButtonText();
+        //ChangeButtonText();
 
-        PlayAnimation(button, false);
-
+        player.GetComponent<PlayerAnimatorScript>().RunAnimation(button, false);
 
     }
 
     void Wrong(int button)
     {
-        PlayAnimation(button, true);
+        player.GetComponent<PlayerAnimatorScript>().RunAnimation(button, true);
     }
 
     //Increments the currentQuestion by one and updates the buttons text.
-    void ChangeButtonText()
+    public void ChangeButtonText()
     {
         //Checks if there are more questions
         if (questions.Length > currentQuestion)
@@ -119,11 +118,6 @@ public class QuestionStorage : MonoBehaviour
         }
     }
 
-    void PlayAnimation(int button, bool wrong)
-    {
 
-        
-
-    }
 
 }

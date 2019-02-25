@@ -854,6 +854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 836024548}
   - component: {fileID: 836024547}
+  - component: {fileID: 836024549}
   m_Layer: 0
   m_Name: Player Mover
   m_TagString: Untagged
@@ -895,6 +896,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &836024549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836024546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4257340df6989a4d8b2cdce24be98d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InformationMaster: {fileID: 667585356}
+  AnimationTime: 2.5
+  Wrong: 1
 --- !u!1 &892844999
 GameObject:
   m_ObjectHideFlags: 0
