@@ -7,7 +7,7 @@ public class MainMenuButtons : MonoBehaviour {
 
 	public void NewGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("JasonScrapYard");
     }
     public void QuitGame()
     {
