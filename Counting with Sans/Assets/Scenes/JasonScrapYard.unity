@@ -353,10 +353,10 @@ RectTransform:
   m_Father: {fileID: 1907737813}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.103252105, y: 0.077505715}
-  m_AnchorMax: {x: 0.8793048, y: 0.13422222}
-  m_AnchoredPosition: {x: 5.435913, y: -5.5}
-  m_SizeDelta: {x: 10.872, y: 11}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.15511115}
+  m_AnchoredPosition: {x: -0.33599854, y: 1.2000122}
+  m_SizeDelta: {x: -0.3, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &592251571
 MonoBehaviour:
@@ -594,31 +594,180 @@ MonoBehaviour:
   secondAnwserBox: {fileID: 1937817565}
   thirdAnwserBox: {fileID: 705823044}
   player: {fileID: 836024546}
-  correctAnwsers: ffffff7f02000000030000000100000001000000
+  correctAnwsers: ffffff7f02000000030000000100000001000000010000000300000002000000010000000200000003000000020000000300000001000000010000000300000001000000030000000100000003000000010000000200000001000000030000000200000003000000010000000300000002000000030000000200000001000000030000000100000002000000030000000100000002000000030000000100000002000000
   questions:
   - Don't write here!
   - What is 1 + 2?
   - What is 4 + 2?
   - What is 6 + 3?
   - What is 3 + 2?
+  - What is 5 + 4?
+  - If you have 1 apple and 1 orange, how many pieces of fruit do you have?
+  - If you have 2 pieces of chocolate and 4 pieces of pepermint, how many pieces of
+    candy do you have?
+  - If you have 1 red pen, 2 blue pens, and 1 green pen, how many pens do you have?
+  - If you have 3 pencils and your friend gives you 1 more, how many pencils do you
+    have?
+  - If you have 2 erasers and you get another 1, how many erasers do you have?
+  - What is 4 - 2?
+  - What is 5 - 3?
+  - What is 5 - 1?
+  - What is 4 - 3?
+  - What is 4 - 1?
+  - If you have 3 cookies and you give 1 away, how many cookies do you have left?
+  - If you have 5 pencils and you give 2 away, how many pencils do you have left?
+  - If you have 4 toys and you give 3 away, how many do you have left?
+  - If you have 12 crayons and you give away 5, how many crayons do you have left?
+  - If you have 3 blocks and you give 2 away how many do you have?
+  - What is 3 x 1?
+  - What is 5 x 2?
+  - What is 4 x 2?
+  - What is 5 x 3?
+  - What is 4 x 3?
+  - If you have 3 friends who each need 1 sheet of paper, how many sheets of paper
+    do you need?
+  - If you have 4 groups who each need 2 glue sticks, how many glues sticks do you
+    need?
+  - If you have 5 friends who need 2 slices of pizza each, how many slices of pizza
+    do you need for all of them?
+  - 'If you have '
+  - 'If you have '
+  - "What is 20 \xF7 4"
+  - "What is 15 \xF7 5"
+  - "What is 10 \xF7 2"
+  - "What is 12 \xF7 3"
+  - "What is 18 \xF7 3"
+  - 'If you have '
+  - 'If you have '
+  - 'If you have '
+  - 'If you have '
+  - 'If you have '
   firstAnwsers:
   - Don't write here!
-  - 7
-  - 3
+  - 2
+  - 4
   - 9
   - 5
+  - 9
+  - 1 piece
+  - 5 pieces
+  - 4 pens
+  - 3 pencils
+  - 1 eraser
+  - 1
+  - 1
+  - 4
+  - 1
+  - 1
+  - 2 cookies
+  - 1 pencil
+  - 1 toy
+  - 5 crayons
+  - 1 block
+  - 2
+  - 10
+  - 6
+  - 14
+  - 10
+  - 3 sheets
+  - 6 sticks
+  - 9 slices
+  - 
+  - 
+  - 5
+  - 1
+  - 5
+  - 3
+  - 4
+  - 
+  - 
+  - 
+  - 
+  - 
   secondAnwsers:
   - Don't write here!
   - 3
-  - 7
-  - 3
+  - 5
+  - 10
   - 6
+  - 10
+  - 3 pieces
+  - 6 pieces
+  - 5 pens
+  - 4 pencils
+  - 2 erasers
+  - 2
+  - 3
+  - 5
+  - 2
+  - 2
+  - 3 cookies
+  - 2 pencils
+  - 2 toys
+  - 6 crayons
+  - 2 blocks
+  - 3
+  - 11
+  - 7
+  - 15
+  - 11
+  - '4 sheets '
+  - 7 sticks
+  - 10 slices
+  - 
+  - 
+  - 6
+  - 2
+  - 6
+  - 4
+  - 5
+  - 
+  - 
+  - 
+  - 
+  - 
   thirdAnwsers:
   - Don't write here!
-  - 9001
+  - 4
   - 6
+  - 11
+  - 7
+  - 11
+  - 2 pieces
+  - 7 pieces
+  - 6 pens
+  - 5 pencils
+  - 3 erasers
+  - 3
+  - 2
+  - 6
+  - 3
+  - 3
+  - 4 cookies
+  - 3 pencils
+  - 3 toys
+  - 7 crayons
+  - 3 blocks
+  - 4
+  - 12
+  - 8
+  - 16
+  - 12
+  - 5 sheets
+  - 8 sticks
+  - 11 slices
+  - 
+  - 
   - 7
   - 3
+  - 7
+  - 5
+  - 6
+  - 
+  - 
+  - 
+  - 
+  - 
   startingQuestion: 1
   currentQuestion: 1
 --- !u!4 &667585358
@@ -1186,10 +1335,10 @@ RectTransform:
   m_Father: {fileID: 592251570}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.01650988, y: 0}
-  m_AnchorMax: {x: 0.9850001, y: 1}
-  m_AnchoredPosition: {x: -0.5, y: 0}
-  m_SizeDelta: {x: 23, y: 0}
+  m_AnchorMin: {x: 0.044814337, y: 0}
+  m_AnchorMax: {x: 0.94100004, y: 1}
+  m_AnchoredPosition: {x: 5.799988, y: 0}
+  m_SizeDelta: {x: 2, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1885377320
 MonoBehaviour:
@@ -1498,10 +1647,10 @@ RectTransform:
   m_Father: {fileID: 1907737813}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.6, y: -5.3}
-  m_SizeDelta: {x: 1330.9, y: 761.1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1.1000061, y: -5.800003}
+  m_SizeDelta: {x: 51.900024, y: 40.099976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2080700583
 MonoBehaviour:
@@ -1516,9 +1665,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sib: {fileID: 2080700582}
-  FadeInTime: 1
-  FadedOutTime: 1
-  FadeOutTime: 1
+  FadeInTime: 0.5
+  FadedOutTime: 0.5
+  FadeOutTime: 0.5
   FNActive: 0
   FDOActive: 0
   FOActive: 0
@@ -1536,7 +1685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
