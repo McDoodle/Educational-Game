@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JasonScrapYard.unity
     guid: bc5f9f5ce75a96b4e84f101615cc4fc5
+  - enabled: 1
+    path: Assets/Scenes/Win Scene.unity
+    guid: e9ee89fd9e189774d99f3e3967cb9d06
   m_configObjects: {}
