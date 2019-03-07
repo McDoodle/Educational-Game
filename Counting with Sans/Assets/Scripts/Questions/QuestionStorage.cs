@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QuestionStorage : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class QuestionStorage : MonoBehaviour
 
     //Stores the player to send animation information to
     public GameObject player;
+
+    public string VictoryScene = "win";
 
     //Integer Array for the Anwsers
     public int[] correctAnwsers;
@@ -106,7 +109,7 @@ public class QuestionStorage : MonoBehaviour
     public void ChangeButtonText()
     {
         //Checks if there are more questions
-        if (questions.Length > currentQuestion)
+        if (questions.Length - 1 > currentQuestion)
         {
 
             currentQuestion += 1;
@@ -115,6 +118,10 @@ public class QuestionStorage : MonoBehaviour
             secondAnwserBox.GetComponentInChildren<Text>().text = secondAnwsers[currentQuestion];
             thirdAnwserBox.GetComponentInChildren<Text>().text = thirdAnwsers[currentQuestion];
 
+        }
+        else
+        {
+            SceneManager.LoadScene(VictoryScene);
         }
     }
 
